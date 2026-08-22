@@ -1,7 +1,22 @@
 # LuminArch gold flow field
 
-Isolated canvas study. **Not** [luminarch.pro](https://luminarch.pro).
+Isolated canvas study. **Not** the live homepage.
 
-Vanilla 2D canvas: LuminArch arch mark as a density plate, gold filaments on a flow field, grain dither. Method inspired by ThreeUI Community (`AtTheHorizon`), rebuilt in LuminArch gold. No React. No `@designcodeio/threeui`.
+Rebuilds the ThreeUI Community *method* from `AtTheHorizon`:
 
-Live preview: https://luchglide.github.io/luminarch-gold-flow-site/
+1. Author a density + flow field from the LuminArch arch mark
+2. Trace filament locks along that field
+3. Bake a static grayscale plate (tone + drift)
+4. Render every frame as a directional coherent dither
+5. Map the 1-bit print to LuminArch gold on `#0A0A0A`
+
+No React. No `@designcodeio/threeui`. No MengTo silhouettes.
+
+## Run locally
+
+```bash
+cd gold-flow
+python3 -m http.server 4173
+```
+
+Open http://localhost:4173
